@@ -1,0 +1,43 @@
+# Salve como: .github/workflows/projetos.yml
+# Regenera o painel PROJECTS.LIST lendo seus repositórios pela API do GitHub
+# e publica o SVG na branch "projects".
+
+name: Gerar painel de projetos
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gerar o SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p dist
+          python3 gerar_projetos.py \
+            --usuario ${{ github.repository_owner }} \
+            --limite 6 \
+            --saida dist/projects.svg
+
+      - name: Publicar na branch projects
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: projects
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
