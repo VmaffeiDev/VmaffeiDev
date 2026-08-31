@@ -1,6 +1,9 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/VmaffeiDev/VmaffeiDev/main/system-info.svg" alt="Victor Maffei" width="100%">
-</p>
+<!-- ===== HERO (theme-aware: dark.svg no modo escuro, light.svg no modo claro) ===== -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/VmaffeiDev/VmaffeiDev/main/dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/VmaffeiDev/VmaffeiDev/main/light.svg">
+  <img alt="Victor Maffei" src="https://raw.githubusercontent.com/VmaffeiDev/VmaffeiDev/main/dark.svg" width="100%">
+</picture>
 
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=VmaffeiDev&hide_border=true&card_width=1180&background=060917&stroke=A855F7&ring=22D3EE&fire=E4A8FF&currStreakLabel=22D3EE&sideLabels=D6DEFF&dates=5C6EA8&currStreakNum=D6DEFF&sideNums=D6DEFF&titleColor=A855F7">
