@@ -191,11 +191,16 @@ def montar(dots):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--foto", default=None, help="caminho da sua foto")
+    p.add_argument("--pontos", default=None, help="arquivo com os <circle> ja gerados")
     p.add_argument("--saida", default="system-info.svg")
     a = p.parse_args()
 
-    img = carregar(a.foto)
-    svg = montar(gerar_dots(img))
+    import os
+    if a.pontos and os.path.exists(a.pontos):
+        dots = open(a.pontos, encoding="utf-8").read()
+    else:
+        dots = gerar_dots(carregar(a.foto))
+    svg = montar(dots)
     with open(a.saida, "w", encoding="utf-8") as f:
         f.write(svg)
     print(f"gerado: {a.saida}")
