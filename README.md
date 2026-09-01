@@ -1,4 +1,3 @@
-(https://github.com/user-attachments/files/31705060/readme_novo.md);
 <div align="center">
 
 # 👋 Olá, eu sou Victor Maffei
