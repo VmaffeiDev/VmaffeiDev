@@ -24,6 +24,7 @@ CAMPOS = [
     ("Origin", "Curitiba, Paraná - Brasil"),
     ("Education", "Análise e Desenvolvimento de Sistemas, Estácio"),
     ("Status", "Aberto a primeira vaga em TI"),
+    ("ToolChain", "Windows Server, Active Directory, Excel, Power BI"),
 ]
 
 STACK = [
