@@ -13,7 +13,7 @@
 ### Full Stack Developer • Node.js • React Native • Cybersecurity
 
 [![GitHub](https://img.shields.io/badge/GitHub-VmaffeiDev-181717?style=for-the-badge&logo=github)](https://github.com/VmaffeiDev)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Victor%20Maffei-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/victor-giuliano-coutinho-maffei-8102311a3/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Victor%20Maffei-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/victormaffei/)
 
 </div>
 
@@ -83,7 +83,7 @@ Sou estudante de Análise e Desenvolvimento de Sistemas, focado em transformar p
 <div align="center">
 
 📧 **vmaffei.dev@gmail.com**
-💼 **LinkedIn:** [Victor Maffei](https://www.linkedin.com/in/victor-giuliano-coutinho-maffei-8102311a3/)
+💼 **LinkedIn:** [Victor Maffei](https://www.linkedin.com/in/victormaffei/)
 
 </div>
 
